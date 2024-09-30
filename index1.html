@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disaster Relief Volunteer Registration</title>
+    <style>
+        body {
+            background-color: hsl(212, 85%, 55%);
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            background-color: #ffffff; /* Warna putih untuk pembatas */
+            max-width: 600px; /* Batas lebar form */
+            margin: 50px auto; /* Margin atas dan bawah untuk jarak dari tepi */
+            padding: 20px; /* Jarak di dalam form */
+            border-radius: 10px; /* Sudut border yang melengkung */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Bayangan untuk memberi efek 3D */
+        }
+
+        h2 {
+            text-align: center;
+            color: #333; /* Warna teks */
+        }
+
+        table {
+            width: 100%;
+        }
+
+        td {
+            padding: 10px 0; /* Jarak antara elemen di dalam tabel */
+        }
+
+        button {
+            width: 100%; /* Tombol akan memenuhi lebar form */
+            padding: 10px;
+            background-color: hsl(212, 85%, 45%);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: hsl(212, 85%, 35%);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Registration Form</h2>
+        <form>
+            <table>
+                <tr>
+                    <td><label for="first_name">First Name</label></td>
+                    <td><input type="text" id="first_name" name="first_name" required></td>
+                </tr>
+                <tr>
+                    <td><label for="last_name">Last Name</label></td>
+                    <td><input type="text" id="last_name" name="last_name" required></td>
+                </tr>
+                <tr>
+                    <td><label for="email">Email Address</label></td>
+                    <td><input type="email" id="email" name="email" required></td>
+                </tr>
+                <tr>
+                    <td><label for="username">Username</label></td>
+                    <td><input type="text" id="username" name="username" required></td>
+                </tr>
+                <tr>
+                    <td><label for="password">Password</label></td>
+                    <td><input type="password" id="password" name="password" required></td>
+                </tr>
+                <tr>
+                    <td><label for="dob">Date of Birth</label></td>
+                    <td><input type="date" id="dob" name="dob" required></td>
+                </tr>
+                <tr>
+                    <td><label>Gender</label></td>
+                    <td>
+                        <input type="radio" name="gender" value="male" required> Male
+                        <input type="radio" name="gender" value="female"> Female
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="profile_pic">Upload Profile Picture</label></td>
+                    <td><input type="file" id="profile_pic" name="profile_pic"></td>
+                </tr>
+            </table>
+
+            <button type="submit">Done</button>
+        </form>
+    </div>
+</body>
+</html>
